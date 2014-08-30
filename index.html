@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>picker时间控件</title>
+<link rel="stylesheet" type="text/css" href="css/pikaday.css"/>
+<script type="text/javascript" src="js/pikaday.min.js"></script>
+</head>
+<body>
+<input type="text" id="datepicker" />
+
+<script type="text/javascript">
+
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date('2010-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020]
+    });
+
+</script>
+</body>
+</html>
